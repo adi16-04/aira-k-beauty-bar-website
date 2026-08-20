@@ -1,0 +1,10 @@
+{
+  "description": "Enables users to generate concise, SEO-friendly descriptions for web applications, enhancing online visibility and engagement with clear, professional summaries.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
