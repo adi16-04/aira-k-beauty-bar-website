@@ -3,17 +3,16 @@ import { useEffect, useRef, useState } from "react";
 type GalleryImage = { src: string; alt: string; category: string; tall?: boolean };
 
 const images: GalleryImage[] = [
-  { src: "https://images.unsplash.com/photo-1773904215697-e6c21fc27ac2?w=600&h=800&fit=crop&auto=format", alt: "Luxury barber chairs in salon", category: "Interior", tall: true },
-  { src: "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=600&h=400&fit=crop&auto=format", alt: "Professional blow dry styling", category: "Hair" },
-  { src: "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=600&h=400&fit=crop&auto=format", alt: "Pink manicure nail art", category: "Nails" },
-  { src: "https://images.unsplash.com/photo-1648671095177-d00c1f6264e9?w=600&h=800&fit=crop&auto=format", alt: "Professional makeup application", category: "Makeup", tall: true },
-  { src: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=600&h=400&fit=crop&auto=format", alt: "Hot stone massage therapy", category: "Beauty" },
-  { src: "https://images.unsplash.com/photo-1629397685944-7073f5589754?w=600&h=400&fit=crop&auto=format", alt: "Hair curling styling service", category: "Hair" },
-  { src: "https://images.unsplash.com/photo-1760862652442-e8ff7ebdd2f8?w=600&h=400&fit=crop&auto=format", alt: "Premium skincare products", category: "Skin" },
-  { src: "https://images.unsplash.com/photo-1604654894611-6973b376cbde?w=600&h=400&fit=crop&auto=format", alt: "Elegant black nail manicure", category: "Nails" },
-  { src: "https://images.unsplash.com/photo-1734111719430-fe4a3973f8af?w=600&h=600&fit=crop&auto=format", alt: "Round brush hair styling", category: "Hair" },
-  { src: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=600&h=400&fit=crop&auto=format", alt: "Relaxing massage with white flowers", category: "Beauty" },
-  { src: "https://images.unsplash.com/photo-1758188753373-5b01a0fc6d9d?w=600&h=400&fit=crop&auto=format", alt: "Elegant skincare bottle collection", category: "Skin" },
+  { src: "/salon-images/IMG-20260821-WA0002.jpg", alt: "Aria K Beauty Bar gold salon sign", category: "Interior" },
+  { src: "/salon-images/1000225018.jpg", alt: "Aria K skincare treatment room with salon equipment", category: "Skin", tall: true },
+  { src: "/salon-images/1000225024.jpg", alt: "Aria K facial treatment bed and beauty room", category: "Beauty", tall: true },
+  { src: "/salon-images/1000225069.jpg", alt: "Professional makeup products displayed at Aria K Beauty Bar", category: "Makeup" },
+  { src: "/salon-images/1000225036.jpg", alt: "Aria K skincare machines and salon trolley", category: "Skin", tall: true },
+  { src: "/salon-images/1000225063.jpg", alt: "Aria K hair styling stations with mirrors and salon chairs", category: "Hair", tall: true },
+  { src: "/salon-images/1000225098.jpg", alt: "Aria K beauty treatment room with facial bed", category: "Beauty", tall: true },
+  { src: "/salon-images/1000225096.jpg", alt: "Aria K spa capsule and treatment room", category: "Beauty", tall: true },
+  { src: "/salon-images/1000225097.jpg", alt: "Aria K salon interior with styling chairs and mirrors", category: "Hair", tall: true },
+  { src: "/salon-images/1000225102.jpg", alt: "Aria K salon styling area with chandelier", category: "Interior", tall: true },
 ];
 
 const categories = ["All", "Hair", "Skin", "Makeup", "Nails", "Beauty", "Interior"];
