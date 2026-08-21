@@ -46,7 +46,7 @@ export default function Navbar() {
         <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 32px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           {/* Logo */}
           <a href="#home" onClick={(e) => handleNavClick(e, "#home")} style={{ textDecoration: "none", display: "flex", flexDirection: "column", lineHeight: 1 }}>
-            <span style={{ fontFamily: "var(--font-display)", fontSize: 22, fontWeight: 700, color: "var(--gold)", letterSpacing: "0.18em" }}>AIRAK</span>
+            <span style={{ fontFamily: "var(--font-display)", fontSize: 22, fontWeight: 700, color: "var(--gold)", letterSpacing: "0.18em" }}>Aria K</span>
             <span style={{ fontFamily: "var(--font-body)", fontSize: 9, fontWeight: 400, color: "var(--blush)", letterSpacing: "0.35em", textTransform: "uppercase", marginTop: 1 }}>Beauty Bar</span>
           </a>
 
@@ -75,30 +75,6 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-
-          {/* Book CTA */}
-          <a
-            href="tel:8660211087"
-            className="hidden-mobile"
-            style={{
-              fontFamily: "var(--font-body)",
-              fontSize: 11,
-              fontWeight: 600,
-              letterSpacing: "0.14em",
-              textTransform: "uppercase",
-              color: "var(--black)",
-              background: "linear-gradient(135deg, var(--gold), var(--light-gold))",
-              padding: "10px 22px",
-              textDecoration: "none",
-              border: "none",
-              cursor: "pointer",
-              transition: "opacity 0.25s, transform 0.25s",
-            }}
-            onMouseEnter={(e) => { (e.target as HTMLElement).style.opacity = "0.88"; (e.target as HTMLElement).style.transform = "translateY(-1px)"; }}
-            onMouseLeave={(e) => { (e.target as HTMLElement).style.opacity = "1"; (e.target as HTMLElement).style.transform = "none"; }}
-          >
-            Book Appointment
-          </a>
 
           {/* Mobile hamburger */}
           <button

@@ -20,7 +20,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div style={{ marginBottom: 20 }}>
-              <p style={{ fontFamily: "var(--font-display)", fontSize: 28, fontWeight: 700, color: "var(--gold)", letterSpacing: "0.12em", marginBottom: 4 }}>AIRAK</p>
+              <p style={{ fontFamily: "var(--font-display)", fontSize: 28, fontWeight: 700, color: "var(--gold)", letterSpacing: "0.12em", marginBottom: 4 }}>Aria K</p>
               <p style={{ fontFamily: "var(--font-body)", fontSize: 9, fontWeight: 400, color: "var(--blush)", letterSpacing: "0.38em", textTransform: "uppercase" }}>Beauty Bar</p>
             </div>
             <p style={{ fontFamily: "var(--font-script)", fontSize: 18, color: "var(--gold)", marginBottom: 16 }}>Unisex Salon</p>

@@ -67,7 +67,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p style={{ fontFamily: "var(--font-body)", fontSize: 11, fontWeight: 500, color: "var(--muted-rose)", letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: 4 }}>Phone</p>
-                    <p style={{ fontFamily: "var(--font-display)", fontSize: 18, color: "var(--soft-black)", fontWeight: 500 }}>8660211087</p>
+                    <p style={{ fontFamily: "var(--font-body)", fontSize: 18, color: "var(--soft-black)", fontWeight: 500 }}>8660211087</p>
                   </div>
                 </a>
 

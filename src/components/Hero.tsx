@@ -143,15 +143,17 @@ export default function Hero() {
           {/* Script accent */}
           <p
             style={{
-              fontFamily: "var(--font-script)",
-              fontSize: "clamp(22px, 3.5vw, 38px)",
+              fontFamily: "var(--font-body)",
+              fontSize: "clamp(18px, 2.4vw, 28px)",
+              fontWeight: 500,
+              letterSpacing: "0.08em",
               color: "var(--gold)",
               marginBottom: 28,
               opacity: 0,
               animation: "fadeInUp 0.8s ease 0.6s both",
             }}
           >
-            AIRAK Beauty Bar
+            Aria K Beauty Bar
           </p>
 
           {/* Divider */}
