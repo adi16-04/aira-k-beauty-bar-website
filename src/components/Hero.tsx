@@ -153,7 +153,7 @@ export default function Hero() {
               animation: "fadeInUp 0.8s ease 0.6s both",
             }}
           >
-            Aria K Beauty Bar
+            Aria k Beauty Bar
           </p>
 
           {/* Divider */}

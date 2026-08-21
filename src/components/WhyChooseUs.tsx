@@ -87,7 +87,7 @@ export default function WhyChooseUs() {
             style={{ fontFamily: "var(--font-display)", fontSize: "clamp(30px, 4vw, 52px)", fontWeight: 600, color: "var(--soft-black)", lineHeight: 1.1, marginBottom: 16 }}
           >
             Why Choose{" "}
-            <em style={{ fontStyle: "italic", color: "var(--muted-rose)" }}>AIRAK?</em>
+            <em style={{ fontStyle: "italic", color: "var(--muted-rose)" }}>Aria k?</em>
           </h2>
           <div
             className="reveal reveal-delay-2"

@@ -5,7 +5,7 @@ const CONTACT = {
   website: "www.airakbeautybar.com",
   address: "No 1625, 1st Floor, 4th Block, Jayanagar East End Main Road, Bangalore - 560041",
   mapsLink: "https://www.google.com/maps/search/?api=1&query=No+1625+1st+Floor+4th+Block+Jayanagar+East+End+Main+Road+Bangalore+560041",
-  whatsapp: "https://wa.me/918660211087?text=Hello!%20I'd%20like%20to%20book%20an%20appointment%20at%20AIRAK%20Beauty%20Bar.",
+  whatsapp: "https://wa.me/918660211087?text=Hello!%20I'd%20like%20to%20book%20an%20appointment%20at%20Aria%20k%20Beauty%20Bar.",
 };
 
 export default function Contact() {
@@ -40,7 +40,7 @@ export default function Contact() {
             className="reveal reveal-delay-1"
             style={{ fontFamily: "var(--font-display)", fontSize: "clamp(30px, 4vw, 52px)", fontWeight: 600, color: "var(--soft-black)", lineHeight: 1.1, marginBottom: 16 }}
           >
-            Visit <em style={{ fontStyle: "italic", color: "var(--muted-rose)" }}>AIRAK</em>
+            Visit <em style={{ fontStyle: "italic", color: "var(--muted-rose)" }}>Aria k</em>
           </h2>
           <div className="reveal reveal-delay-2" style={{ width: 48, height: 1, background: "var(--gold)", margin: "0 auto", opacity: 0.6 }} aria-hidden="true" />
         </div>
@@ -50,7 +50,7 @@ export default function Contact() {
           <div>
             <div className="reveal" style={{ marginBottom: 48 }}>
               <h3 style={{ fontFamily: "var(--font-display)", fontSize: 22, fontWeight: 600, color: "var(--soft-black)", marginBottom: 28, letterSpacing: "0.04em" }}>
-                AIRAK BEAUTY BAR
+                Aria k Beauty Bar
               </h3>
               <p style={{ fontFamily: "var(--font-script)", fontSize: 18, color: "var(--gold)", marginBottom: 32 }}>Unisex Salon</p>
 
@@ -198,7 +198,7 @@ export default function Contact() {
             >
               <img
                 src="https://images.unsplash.com/photo-1758188753373-5b01a0fc6d9d?w=700&h=500&fit=crop&auto=format"
-                alt="AIRAK Beauty Bar salon ambiance"
+                alt="Aria k Beauty Bar salon ambiance"
                 loading="lazy"
                 style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.5 }}
               />

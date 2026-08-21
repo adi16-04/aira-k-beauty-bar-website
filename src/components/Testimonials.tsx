@@ -7,12 +7,12 @@ const testimonials = [
     role: "Regular Client",
   },
   {
-    quote: "The team at AIRAK is incredibly skilled and attentive. My hair transformation exceeded all expectations.",
+    quote: "The team at Aria k is incredibly skilled and attentive. My hair transformation exceeded all expectations.",
     name: "P. Reddy",
     role: "Salon Client",
   },
   {
-    quote: "From the bridal makeup to the nail art, everything was flawless. Highly recommend AIRAK Beauty Bar.",
+    quote: "From the bridal makeup to the nail art, everything was flawless. Highly recommend Aria k Beauty Bar.",
     name: "R. Mehta",
     role: "Bridal Client",
   },

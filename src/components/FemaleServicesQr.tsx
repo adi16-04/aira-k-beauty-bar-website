@@ -52,7 +52,7 @@ export default function FemaleServicesQr() {
             return (
               <article key={item.hash} className="female-qr-print-card">
                 <h3>{item.label}</h3>
-                <img src={qrUrl} alt={`QR code for AIRAK Beauty Bar ${item.label.toLowerCase()} services menu`} />
+                <img src={qrUrl} alt={`QR code for Aria k Beauty Bar ${item.label.toLowerCase()} services menu`} />
                 <p>{item.description}</p>
                 <p>{menuUrl}</p>
                 <div className="service-qr-actions">

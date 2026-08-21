@@ -29,7 +29,7 @@ export default function App() {
         csvPath="/female-services.csv"
         hash="#female-services"
         eyebrow="Female Services Menu"
-        description="Hair, skin, and nail services for women at AIRAK Beauty Bar, Jayanagar."
+        description="Hair, skin, and nail services for women at Aria k Beauty Bar, Jayanagar."
         qrAlt="QR code for female services menu"
         downloadName="airak-female-services-qr.png"
       />
@@ -43,7 +43,7 @@ export default function App() {
         csvPath="/men-services.csv"
         hash="#men-services"
         eyebrow="Men Services Menu"
-        description="Hair, skin, and nail services for men at AIRAK Beauty Bar, Jayanagar."
+        description="Hair, skin, and nail services for men at Aria k Beauty Bar, Jayanagar."
         qrAlt="QR code for men services menu"
         downloadName="airak-men-services-qr.png"
       />
@@ -56,8 +56,8 @@ export default function App() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "BeautySalon",
-        "name": "AIRAK Beauty Bar",
-        "description": "AIRAK Beauty Bar is a premium unisex salon in Jayanagar, Bangalore, offering professional hair, skin, makeup, nails and massage services.",
+        "name": "Aria k Beauty Bar",
+        "description": "Aria k Beauty Bar is a premium unisex salon in Jayanagar, Bangalore, offering professional hair, skin, makeup, nails and massage services.",
         "url": "https://www.airakbeautybar.com",
         "telephone": "+918660211087",
         "address": {
