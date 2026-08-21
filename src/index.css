@@ -98,3 +98,222 @@ body {
 .reveal-delay-2 { transition-delay: 0.2s; }
 .reveal-delay-3 { transition-delay: 0.3s; }
 .reveal-delay-4 { transition-delay: 0.4s; }
+
+.female-menu-hero {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: end;
+}
+
+.female-qr-card {
+  width: 210px;
+  background: var(--warm-white);
+  border: 1px solid rgba(214,181,108,0.3);
+  padding: 18px;
+  display: grid;
+  gap: 14px;
+  justify-items: center;
+}
+
+.female-menu-controls {
+  display: grid;
+  grid-template-columns: 1fr minmax(220px, 320px);
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.female-category-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.female-category-tabs button {
+  min-height: 42px;
+  padding: 0 18px;
+  border-radius: 0;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.female-menu-search {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid rgba(10,10,10,0.14);
+  background: #fff;
+  color: var(--soft-black);
+  padding: 0 14px;
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+
+.female-menu-search:focus {
+  outline: 2px solid rgba(214,181,108,0.45);
+  outline-offset: 2px;
+}
+
+.female-services-list {
+  display: grid;
+  gap: 10px;
+}
+
+.female-service-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 22px;
+  align-items: center;
+  background: #fff;
+  border: 1px solid rgba(10,10,10,0.08);
+  padding: 18px 20px;
+}
+
+.female-service-row p {
+  margin: 0 0 4px;
+  color: var(--muted-rose);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.female-service-row h2 {
+  margin: 0;
+  color: var(--soft-black);
+  font-family: var(--font-display);
+  font-size: clamp(20px, 3vw, 28px);
+  font-weight: 600;
+  line-height: 1.18;
+}
+
+.female-service-row span {
+  display: block;
+  margin-top: 5px;
+  color: rgba(10,10,10,0.52);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.female-service-row > div:last-child {
+  min-width: 132px;
+  text-align: right;
+}
+
+.female-service-row strong {
+  color: var(--soft-black);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.female-qr-section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 44px;
+  align-items: center;
+}
+
+.female-qr-print-card {
+  width: 300px;
+  background: #fff;
+  border: 1px solid rgba(10,10,10,0.08);
+  padding: 22px;
+  text-align: center;
+}
+
+.female-qr-print-card h3 {
+  margin: 0 0 14px;
+  color: var(--soft-black);
+  font-family: var(--font-display);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.female-qr-print-card img {
+  width: 236px;
+  height: 236px;
+  display: block;
+  margin: 0 auto 14px;
+}
+
+.female-qr-print-card p {
+  margin: 0;
+  color: rgba(10,10,10,0.52);
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.service-qr-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 300px));
+  gap: 18px;
+}
+
+.service-qr-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.service-qr-actions a {
+  min-height: 40px;
+  display: grid;
+  place-items: center;
+  color: var(--ivory);
+  background: var(--black);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.service-qr-actions a:last-child {
+  color: var(--black);
+  background: transparent;
+  border: 1px solid rgba(10,10,10,0.18);
+}
+
+@media (max-width: 760px) {
+  .female-menu-hero,
+  .female-menu-controls,
+  .female-service-row,
+  .female-qr-section {
+    grid-template-columns: 1fr;
+  }
+
+  .female-qr-card {
+    width: 100%;
+    max-width: 250px;
+    justify-self: start;
+  }
+
+  .female-service-row > div:last-child {
+    min-width: 0;
+    text-align: left;
+  }
+
+  .female-qr-section {
+    padding: 0 22px;
+  }
+
+  .female-qr-print-card {
+    width: 100%;
+    max-width: 310px;
+  }
+
+  .service-qr-grid {
+    grid-template-columns: 1fr;
+  }
+}
