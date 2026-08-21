@@ -3,16 +3,16 @@ import { useEffect, useRef, useState } from "react";
 type GalleryImage = { src: string; alt: string; category: string; tall?: boolean };
 
 const images: GalleryImage[] = [
-  { src: "/salon-images/IMG-20260821-WA0002.jpg", alt: "Aria K Beauty Bar gold salon sign", category: "Interior" },
-  { src: "/salon-images/1000225018.jpg", alt: "Aria K skincare treatment room with salon equipment", category: "Skin", tall: true },
-  { src: "/salon-images/1000225024.jpg", alt: "Aria K facial treatment bed and beauty room", category: "Beauty", tall: true },
-  { src: "/salon-images/1000225069.jpg", alt: "Professional makeup products displayed at Aria K Beauty Bar", category: "Makeup" },
-  { src: "/salon-images/1000225036.jpg", alt: "Aria K skincare machines and salon trolley", category: "Skin", tall: true },
-  { src: "/salon-images/1000225063.jpg", alt: "Aria K hair styling stations with mirrors and salon chairs", category: "Hair", tall: true },
-  { src: "/salon-images/1000225098.jpg", alt: "Aria K beauty treatment room with facial bed", category: "Beauty", tall: true },
-  { src: "/salon-images/1000225096.jpg", alt: "Aria K spa capsule and treatment room", category: "Beauty", tall: true },
-  { src: "/salon-images/1000225097.jpg", alt: "Aria K salon interior with styling chairs and mirrors", category: "Hair", tall: true },
-  { src: "/salon-images/1000225102.jpg", alt: "Aria K salon styling area with chandelier", category: "Interior", tall: true },
+  { src: "/salon-images/IMG-20260821-WA0002.jpg", alt: "Aria k Beauty Bar gold salon sign", category: "Interior" },
+  { src: "/salon-images/1000225018.jpg", alt: "Aria k skincare treatment room with salon equipment", category: "Skin", tall: true },
+  { src: "/salon-images/1000225024.jpg", alt: "Aria k facial treatment bed and beauty room", category: "Beauty", tall: true },
+  { src: "/salon-images/1000225069.jpg", alt: "Professional makeup products displayed at Aria k Beauty Bar", category: "Makeup" },
+  { src: "/salon-images/1000225036.jpg", alt: "Aria k skincare machines and salon trolley", category: "Skin", tall: true },
+  { src: "/salon-images/1000225063.jpg", alt: "Aria k hair styling stations with mirrors and salon chairs", category: "Hair", tall: true },
+  { src: "/salon-images/1000225098.jpg", alt: "Aria k beauty treatment room with facial bed", category: "Beauty", tall: true },
+  { src: "/salon-images/1000225096.jpg", alt: "Aria k spa capsule and treatment room", category: "Beauty", tall: true },
+  { src: "/salon-images/1000225097.jpg", alt: "Aria k salon interior with styling chairs and mirrors", category: "Hair", tall: true },
+  { src: "/salon-images/1000225102.jpg", alt: "Aria k salon styling area with chandelier", category: "Interior", tall: true },
 ];
 
 const categories = ["All", "Hair", "Skin", "Makeup", "Nails", "Beauty", "Interior"];
@@ -55,7 +55,7 @@ export default function Gallery() {
             Gallery
           </h2>
           <p className="reveal reveal-delay-2" style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "rgba(255,249,245,0.4)", fontWeight: 300, maxWidth: 400, margin: "0 auto 32px" }}>
-            A glimpse into the AIRAK experience.
+            A glimpse into the Aria k experience.
           </p>
 
           {/* Filter tabs */}

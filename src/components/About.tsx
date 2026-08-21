@@ -56,7 +56,7 @@ export default function About() {
             />
             <img
               src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=700&h=900&fit=crop&auto=format"
-              alt="Professional hairstylist at work in AIRAK Beauty Bar"
+              alt="Professional hairstylist at work in Aria k Beauty Bar"
               loading="lazy"
               style={{
                 width: "100%",
@@ -133,7 +133,7 @@ export default function About() {
               className="reveal reveal-delay-3"
               style={{ fontFamily: "var(--font-body)", fontSize: 16, color: "#4a3f3f", lineHeight: 1.85, marginBottom: 16, fontWeight: 300 }}
             >
-              AIRAK Beauty Bar is a premium unisex salon in the heart of Jayanagar, Bangalore — a sanctuary where every client is treated with care, expertise, and genuine attention to detail.
+              Aria k Beauty Bar is a premium unisex salon in the heart of Jayanagar, Bangalore — a sanctuary where every client is treated with care, expertise, and genuine attention to detail.
             </p>
             <p
               className="reveal reveal-delay-3"
