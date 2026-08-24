@@ -1,4 +1,4 @@
-Build a complete, production-quality **static website for “Aria k Beauty Bar”**, a premium unisex salon in Bangalore, India.
+Build a complete, production-quality **static website for “Aira K Beauty Bar”**, a premium unisex salon in Bangalore, India.
 
 I have provided a **salon visiting card image** as the primary visual reference. Carefully follow its branding, typography feel, color palette, logo style, premium aesthetic, floral elements, gold accents, and overall luxury appearance. The website should feel like a real premium salon brand website — elegant, sophisticated, modern, feminine yet unisex, visually rich, and highly polished.
 
@@ -24,7 +24,7 @@ I have provided a **salon visiting card image** as the primary visual reference.
 
 Business name:
 
-Aria k Beauty Bar
+Aira K Beauty Bar
 
 Tagline:
 
@@ -136,7 +136,7 @@ Create a sophisticated sticky navigation bar.
 
 Left:
 
-* Aria k Beauty Bar logo/brand
+* Aira K Beauty Bar logo/brand
 
 Navigation:
 
@@ -169,7 +169,7 @@ Create a visually stunning premium hero section.
 
 The hero should immediately communicate:
 
-Aria k Beauty Bar
+Aira K Beauty Bar
 
 “Unisex Salon”
 
@@ -213,13 +213,13 @@ It should immediately feel like a premium beauty brand.
 
 # 3. BRAND INTRO / ABOUT SECTION
 
-Create an elegant About section introducing Aria k Beauty Bar.
+Create an elegant About section introducing Aira K Beauty Bar.
 
 Title:
 
 “Beauty Is Our Passion”
 
-Content should communicate that Aria k Beauty Bar is a premium unisex salon focused on beauty, style, confidence, professional service and customer satisfaction.
+Content should communicate that Aira K Beauty Bar is a premium unisex salon focused on beauty, style, confidence, professional service and customer satisfaction.
 
 Include:
 
@@ -292,7 +292,7 @@ Use the exact concepts from the visiting card.
 
 Section heading:
 
-“Why Choose Aria k?”
+“Why Choose Aira K?”
 
 Create four premium feature blocks:
 
@@ -422,7 +422,7 @@ Create a premium contact section.
 
 Display:
 
-Aria k Beauty Bar
+Aira K Beauty Bar
 
 Phone:
 8660211087
@@ -458,7 +458,7 @@ Create a premium dark footer.
 
 Include:
 
-Aria k Beauty Bar
+Aira K Beauty Bar
 
 “Unisex Salon”
 
@@ -496,7 +496,7 @@ If actual social links are not available, make the icons visually present but ke
 
 Add:
 
-“© 2026 Aria k Beauty Bar. All Rights Reserved.”
+“© 2026 Aira K Beauty Bar. All Rights Reserved.”
 
 ---
 
@@ -545,9 +545,9 @@ Maintain excellent readability.
 
 # LOGO
 
-The visiting card contains the Aria k logo with:
+The visiting card contains the Aira K logo with:
 
-* “Aria k”
+* “Aira K”
 * Crown
 * Female silhouette
 * Floral decoration
@@ -555,7 +555,7 @@ The visiting card contains the Aria k logo with:
 
 If the actual logo asset is available, use it.
 
-If the logo is not available separately, create a visually appropriate text-based Aria k brand treatment and structure the code so the actual logo can easily be replaced later.
+If the logo is not available separately, create a visually appropriate text-based Aira K brand treatment and structure the code so the actual logo can easily be replaced later.
 
 Do NOT attempt to create a low-quality fake logo.
 
@@ -708,11 +708,11 @@ Add proper static SEO metadata.
 
 Title:
 
-Aria k Beauty Bar | Premium Unisex Salon in Bangalore
+Aira K Beauty Bar | Premium Unisex Salon in Bangalore
 
 Meta description:
 
-Aria k Beauty Bar is a premium unisex salon in Jayanagar, Bangalore, offering professional hair, skin, makeup, nails and massage services.
+Aira K Beauty Bar is a premium unisex salon in Jayanagar, Bangalore, offering professional hair, skin, makeup, nails and massage services.
 
 Use appropriate:
 
@@ -841,9 +841,9 @@ Avoid:
 
 ## MOST IMPORTANT
 
-Treat the uploaded **Aria k Beauty Bar visiting card as the primary visual brand reference**.
+Treat the uploaded **Aira K Beauty Bar visiting card as the primary visual brand reference**.
 
-The website should visually feel like the visiting card has been transformed into a **modern, premium, responsive salon website** while preserving the Aria k brand identity.
+The website should visually feel like the visiting card has been transformed into a **modern, premium, responsive salon website** while preserving the Aira K brand identity.
 
 Build the complete website, not just the hero section.
 

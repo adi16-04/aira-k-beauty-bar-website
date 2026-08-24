@@ -108,7 +108,7 @@ export default function FemaleServicesMenu({
       <section style={{ background: "var(--black)", color: "var(--ivory)", padding: "36px 0 44px" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto", padding: "0 22px" }}>
           <a href="/#home" style={{ color: "var(--gold)", textDecoration: "none", fontFamily: "var(--font-body)", fontSize: 12, fontWeight: 600, letterSpacing: "0.18em", textTransform: "uppercase" }}>
-            Aria k Beauty Bar
+            Aira K Beauty Bar
           </a>
           <div className="female-menu-hero">
             <div>

@@ -20,7 +20,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div style={{ marginBottom: 20 }}>
-              <p style={{ fontFamily: "var(--font-display)", fontSize: 28, fontWeight: 700, color: "var(--gold)", letterSpacing: "0.12em", marginBottom: 4 }}>Aria k</p>
+              <p style={{ fontFamily: "var(--font-display)", fontSize: 28, fontWeight: 700, color: "var(--gold)", letterSpacing: "0.12em", marginBottom: 4 }}>Aira K</p>
               <p style={{ fontFamily: "var(--font-body)", fontSize: 9, fontWeight: 400, color: "var(--blush)", letterSpacing: "0.38em", textTransform: "uppercase" }}>Beauty Bar</p>
             </div>
             <p style={{ fontFamily: "var(--font-script)", fontSize: 18, color: "var(--gold)", marginBottom: 16 }}>Unisex Salon</p>
@@ -127,7 +127,7 @@ export default function Footer() {
       {/* Copyright */}
       <div style={{ maxWidth: 1280, margin: "0 auto", padding: "24px 32px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
         <p style={{ fontFamily: "var(--font-body)", fontSize: 11, color: "rgba(255,249,245,0.25)", fontWeight: 300, letterSpacing: "0.06em" }}>
-          © 2026 Aria k Beauty Bar. All Rights Reserved.
+          © 2026 Aira K Beauty Bar. All Rights Reserved.
         </p>
         <p style={{ fontFamily: "var(--font-body)", fontSize: 10, color: "rgba(255,249,245,0.18)", letterSpacing: "0.2em", textTransform: "uppercase" }}>
           Beauty • Style • Confidence
