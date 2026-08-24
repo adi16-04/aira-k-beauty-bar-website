@@ -122,7 +122,7 @@ export default function Experience() {
               Book an Appointment
             </a>
             <a
-              href={`https://wa.me/918660211087?text=${encodeURIComponent("Hello! I'd like to book an appointment at Aria k Beauty Bar.")}`}
+              href={`https://wa.me/918660211087?text=${encodeURIComponent("Hello! I'd like to book an appointment at Aira K Beauty Bar.")}`}
               target="_blank"
               rel="noopener noreferrer"
               style={{

@@ -46,7 +46,7 @@ export default function Navbar() {
         <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 32px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           {/* Logo */}
           <a href="#home" onClick={(e) => handleNavClick(e, "#home")} style={{ textDecoration: "none", display: "flex", flexDirection: "column", lineHeight: 1 }}>
-            <span style={{ fontFamily: "var(--font-display)", fontSize: 22, fontWeight: 700, color: "var(--gold)", letterSpacing: "0.18em" }}>Aria k</span>
+            <span style={{ fontFamily: "var(--font-display)", fontSize: 22, fontWeight: 700, color: "var(--gold)", letterSpacing: "0.18em" }}>Aira K</span>
             <span style={{ fontFamily: "var(--font-body)", fontSize: 9, fontWeight: 400, color: "var(--blush)", letterSpacing: "0.35em", textTransform: "uppercase", marginTop: 1 }}>Beauty Bar</span>
           </a>
 
