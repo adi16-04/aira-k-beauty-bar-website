@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { trackCtaClick, trackOnboardingStart } from "../utils/analytics";
 
 export default function Hero() {
   const headingRef = useRef<HTMLHeadingElement>(null);
@@ -18,6 +19,16 @@ export default function Hero() {
 
   const scrollToSection = (id: string) => {
     document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleBookClick = () => {
+    trackCtaClick("Book an Appointment", "hero");
+    trackOnboardingStart("hero", "phone");
+  };
+
+  const handleExploreServicesClick = () => {
+    trackCtaClick("Explore Services", "hero");
+    scrollToSection("#services");
   };
 
   return (
@@ -191,6 +202,7 @@ export default function Hero() {
           >
             <a
               href="tel:8660211087"
+              onClick={handleBookClick}
               style={{
                 fontFamily: "var(--font-body)",
                 fontSize: 12,
@@ -210,7 +222,7 @@ export default function Hero() {
               Book an Appointment
             </a>
             <button
-              onClick={() => scrollToSection("#services")}
+              onClick={handleExploreServicesClick}
               style={{
                 fontFamily: "var(--font-body)",
                 fontSize: 12,

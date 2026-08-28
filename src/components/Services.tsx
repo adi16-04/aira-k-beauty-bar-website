@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { trackCtaClick, trackOnboardingStart } from "../utils/analytics";
 
 const services = [
   {
@@ -70,6 +71,11 @@ export default function Services() {
   }, []);
 
   const current = services.find((s) => s.id === activeService)!;
+
+  const handleBookNowClick = () => {
+    trackCtaClick("Book Now", "services");
+    trackOnboardingStart("services", "phone");
+  };
 
   return (
     <section id="services" ref={sectionRef} style={{ background: "var(--black)", padding: "100px 0" }}>
@@ -225,6 +231,7 @@ export default function Services() {
 
             <a
               href="tel:8660211087"
+              onClick={handleBookNowClick}
               style={{
                 display: "inline-block",
                 fontFamily: "var(--font-body)",

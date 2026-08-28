@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { trackCtaClick, trackOnboardingStart } from "../utils/analytics";
 
 export default function CTA() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -19,6 +20,16 @@ export default function CTA() {
     if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
   }, []);
+
+  const handleBookClick = () => {
+    trackCtaClick("Book an Appointment", "cta");
+    trackOnboardingStart("cta", "phone");
+  };
+
+  const handleCallClick = () => {
+    trackCtaClick("Call", "cta");
+    trackOnboardingStart("cta", "phone");
+  };
 
   return (
     <section
@@ -81,6 +92,7 @@ export default function CTA() {
         <div className="reveal reveal-delay-4" style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
           <a
             href="tel:8660211087"
+            onClick={handleBookClick}
             style={{
               fontFamily: "var(--font-body)",
               fontSize: 12,
@@ -101,6 +113,7 @@ export default function CTA() {
           </a>
           <a
             href="tel:8660211087"
+            onClick={handleCallClick}
             style={{
               fontFamily: "var(--font-body)",
               fontSize: 12,
