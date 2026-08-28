@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { trackCtaClick, trackOnboardingStart } from "../utils/analytics";
 
 const NAV_LINKS = [
   { label: "Home", href: "#home" },
@@ -24,6 +25,12 @@ export default function Navbar() {
     setMenuOpen(false);
     const target = document.querySelector(href);
     if (target) target.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleMobileBookClick = () => {
+    setMenuOpen(false);
+    trackCtaClick("Book Appointment", "mobile_nav");
+    trackOnboardingStart("mobile_nav", "phone");
   };
 
   return (
@@ -142,6 +149,7 @@ export default function Navbar() {
           ))}
           <a
             href="tel:8660211087"
+            onClick={handleMobileBookClick}
             style={{
               marginTop: 16,
               fontFamily: "var(--font-body)",

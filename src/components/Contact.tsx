@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { trackCtaClick, trackOnboardingStart } from "../utils/analytics";
 
 const CONTACT = {
   phone: "8660211087",
@@ -27,6 +28,21 @@ export default function Contact() {
     if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
   }, []);
+
+  const handlePhoneClick = () => {
+    trackCtaClick("Phone", "contact_info");
+    trackOnboardingStart("contact_info", "phone");
+  };
+
+  const handleCallToBookClick = () => {
+    trackCtaClick("Call to Book", "contact");
+    trackOnboardingStart("contact", "phone");
+  };
+
+  const handleWhatsappClick = () => {
+    trackCtaClick("WhatsApp", "contact");
+    trackOnboardingStart("contact", "whatsapp");
+  };
 
   return (
     <section id="contact" ref={sectionRef} style={{ background: "var(--warm-white)", padding: "100px 0" }}>
@@ -58,6 +74,7 @@ export default function Contact() {
                 {/* Phone */}
                 <a
                   href="tel:8660211087"
+                  onClick={handlePhoneClick}
                   style={{ display: "flex", alignItems: "flex-start", gap: 16, textDecoration: "none", group: true } as React.CSSProperties}
                 >
                   <div style={{ width: 40, height: 40, background: "var(--black)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
@@ -140,6 +157,7 @@ export default function Contact() {
               <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
                 <a
                   href="tel:8660211087"
+                  onClick={handleCallToBookClick}
                   style={{
                     fontFamily: "var(--font-body)",
                     fontSize: 11,
@@ -162,6 +180,7 @@ export default function Contact() {
                   href={CONTACT.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={handleWhatsappClick}
                   style={{
                     fontFamily: "var(--font-body)",
                     fontSize: 11,

@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { trackCtaClick, trackOnboardingStart } from "../utils/analytics";
 
 export default function Experience() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -19,6 +20,16 @@ export default function Experience() {
     if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
   }, []);
+
+  const handleBookClick = () => {
+    trackCtaClick("Book an Appointment", "experience");
+    trackOnboardingStart("experience", "phone");
+  };
+
+  const handleWhatsappClick = () => {
+    trackCtaClick("WhatsApp Us", "experience");
+    trackOnboardingStart("experience", "whatsapp");
+  };
 
   return (
     <section
@@ -103,6 +114,7 @@ export default function Experience() {
           <div className="reveal reveal-delay-4" style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
             <a
               href="tel:8660211087"
+              onClick={handleBookClick}
               style={{
                 fontFamily: "var(--font-body)",
                 fontSize: 11,
@@ -125,6 +137,7 @@ export default function Experience() {
               href={`https://wa.me/918660211087?text=${encodeURIComponent("Hello! I'd like to book an appointment at Aira K Beauty Bar.")}`}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleWhatsappClick}
               style={{
                 fontFamily: "var(--font-body)",
                 fontSize: 11,
