@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { trackCtaClick, trackOnboardingStart } from "../utils/analytics";
+import { trackCtaClick, trackGenerateLead, trackOnboardingStart } from "../utils/analytics";
 
 const CONTACT = {
   phone: "8660211087",
@@ -32,16 +32,19 @@ export default function Contact() {
   const handlePhoneClick = () => {
     trackCtaClick("Phone", "contact_info");
     trackOnboardingStart("contact_info", "phone");
+    trackGenerateLead("contact_info", "phone");
   };
 
   const handleCallToBookClick = () => {
     trackCtaClick("Call to Book", "contact");
     trackOnboardingStart("contact", "phone");
+    trackGenerateLead("contact", "phone");
   };
 
   const handleWhatsappClick = () => {
     trackCtaClick("WhatsApp", "contact");
     trackOnboardingStart("contact", "whatsapp");
+    trackGenerateLead("contact", "whatsapp");
   };
 
   return (

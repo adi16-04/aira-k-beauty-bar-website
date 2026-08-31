@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { trackCtaClick, trackOnboardingStart } from "../utils/analytics";
+import { trackCtaClick, trackGenerateLead, trackOnboardingStart } from "../utils/analytics";
 
 const services = [
   {
@@ -75,6 +75,7 @@ export default function Services() {
   const handleBookNowClick = () => {
     trackCtaClick("Book Now", "services");
     trackOnboardingStart("services", "phone");
+    trackGenerateLead("services", "phone");
   };
 
   return (

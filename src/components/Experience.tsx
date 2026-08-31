@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { trackCtaClick, trackOnboardingStart } from "../utils/analytics";
+import { trackCtaClick, trackGenerateLead, trackOnboardingStart } from "../utils/analytics";
 
 export default function Experience() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -24,11 +24,13 @@ export default function Experience() {
   const handleBookClick = () => {
     trackCtaClick("Book an Appointment", "experience");
     trackOnboardingStart("experience", "phone");
+    trackGenerateLead("experience", "phone");
   };
 
   const handleWhatsappClick = () => {
     trackCtaClick("WhatsApp Us", "experience");
     trackOnboardingStart("experience", "whatsapp");
+    trackGenerateLead("experience", "whatsapp");
   };
 
   return (

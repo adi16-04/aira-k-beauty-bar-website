@@ -27,3 +27,10 @@ export function trackOnboardingStart(section: string, method: "phone" | "whatsap
     method,
   });
 }
+
+export function trackGenerateLead(section: string, method: "phone" | "whatsapp") {
+  trackEvent("generate_lead", {
+    method,
+    section,
+  });
+}
