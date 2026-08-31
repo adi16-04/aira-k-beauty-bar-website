@@ -1,4 +1,6 @@
 // Centralized social config — replace URLs when available
+import { trackCtaClick, trackGenerateLead } from "../utils/analytics";
+
 const SOCIAL = {
   instagram: "#",
   facebook: "#",
@@ -10,6 +12,16 @@ const NAV = ["Home", "About", "Services", "Gallery", "Contact"];
 export default function Footer() {
   const scrollTo = (id: string) => {
     document.querySelector(`#${id.toLowerCase()}`)?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handlePhoneClick = () => {
+    trackCtaClick("Phone", "footer");
+    trackGenerateLead("footer", "phone");
+  };
+
+  const handleWhatsappClick = () => {
+    trackCtaClick("WhatsApp", "footer");
+    trackGenerateLead("footer", "whatsapp");
   };
 
   return (
@@ -45,7 +57,7 @@ export default function Footer() {
                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
                 </svg>
               </SocialIcon>
-              <SocialIcon href={SOCIAL.whatsapp} label="WhatsApp">
+              <SocialIcon href={SOCIAL.whatsapp} label="WhatsApp" onClick={handleWhatsappClick}>
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true">
                   <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
                 </svg>
@@ -90,7 +102,7 @@ export default function Footer() {
             <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
               <div>
                 <p style={{ fontFamily: "var(--font-body)", fontSize: 10, color: "rgba(214,181,108,0.5)", letterSpacing: "0.18em", textTransform: "uppercase", marginBottom: 4 }}>Phone</p>
-                <a href="tel:8660211087" style={{ fontFamily: "var(--font-body)", fontSize: 14, color: "rgba(255,249,245,0.65)", textDecoration: "none", fontWeight: 300, transition: "color 0.2s" }}
+                <a href="tel:8660211087" onClick={handlePhoneClick} style={{ fontFamily: "var(--font-body)", fontSize: 14, color: "rgba(255,249,245,0.65)", textDecoration: "none", fontWeight: 300, transition: "color 0.2s" }}
                   onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "var(--gold)")}
                   onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "rgba(255,249,245,0.65)")}
                 >
@@ -146,13 +158,14 @@ export default function Footer() {
   );
 }
 
-function SocialIcon({ href, label, children }: { href: string; label: string; children: React.ReactNode }) {
+function SocialIcon({ href, label, children, onClick }: { href: string; label: string; children: React.ReactNode; onClick?: () => void }) {
   return (
     <a
       href={href}
       aria-label={label}
       target={href !== "#" ? "_blank" : undefined}
       rel={href !== "#" ? "noopener noreferrer" : undefined}
+      onClick={onClick}
       style={{
         width: 36,
         height: 36,

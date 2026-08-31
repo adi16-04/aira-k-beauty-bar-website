@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { trackCtaClick, trackOnboardingStart } from "../utils/analytics";
+import { trackCtaClick, trackGenerateLead, trackOnboardingStart } from "../utils/analytics";
 
 export default function Hero() {
   const headingRef = useRef<HTMLHeadingElement>(null);
@@ -24,6 +24,7 @@ export default function Hero() {
   const handleBookClick = () => {
     trackCtaClick("Book an Appointment", "hero");
     trackOnboardingStart("hero", "phone");
+    trackGenerateLead("hero", "phone");
   };
 
   const handleExploreServicesClick = () => {

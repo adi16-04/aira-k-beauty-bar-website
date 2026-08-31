@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { trackCtaClick, trackOnboardingStart } from "../utils/analytics";
+import { trackCtaClick, trackGenerateLead, trackOnboardingStart } from "../utils/analytics";
 
 const NAV_LINKS = [
   { label: "Home", href: "#home" },
@@ -31,6 +31,7 @@ export default function Navbar() {
     setMenuOpen(false);
     trackCtaClick("Book Appointment", "mobile_nav");
     trackOnboardingStart("mobile_nav", "phone");
+    trackGenerateLead("mobile_nav", "phone");
   };
 
   return (
