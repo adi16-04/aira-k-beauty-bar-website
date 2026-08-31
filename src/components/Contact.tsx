@@ -5,7 +5,7 @@ const CONTACT = {
   phone: "8660211087",
   website: "www.airakbeautybar.com",
   address: "No 1625, 1st Floor, 4th Block, Jayanagar East End Main Road, Bangalore - 560041",
-  mapsLink: "https://www.google.com/maps/search/?api=1&query=No+1625+1st+Floor+4th+Block+Jayanagar+East+End+Main+Road+Bangalore+560041",
+  mapsLink: "https://maps.app.goo.gl/5UJmcVfydunee9Lx7",
   whatsapp: "https://wa.me/918660211087?text=Hello!%20I'd%20like%20to%20book%20an%20appointment%20at%20Aria%20k%20Beauty%20Bar.",
 };
 
